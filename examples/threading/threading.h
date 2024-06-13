@@ -19,7 +19,7 @@ struct thread_data {
      */
     pthread_mutex_t *mutex;
     int wait_to_obtain_ms;
-    int wait_to_release_ms;
+    int wait_to_release_ms; 
 
     /**
      * Set to true if the thread completed with success, false
@@ -44,5 +44,4 @@ struct thread_data {
 */
 bool start_thread_obtaining_mutex(pthread_t *thread, pthread_mutex_t *mutex, int wait_to_obtain_ms, int wait_to_release_ms);
 
-#endif // THREADING_H
-
+#endif // THREADING
